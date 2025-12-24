@@ -1,0 +1,15 @@
+TODO: - React JS
+
+Read in detail to have better understanding of these concepts.
+
+1. CDN React 
+2. Crossorigin
+3. render
+4. HMR
+5. File Watching Algorithm
+6. Consistent Hashing
+7. Consistent Hashing
+8. Code Splitting
+9. Differential Build - Support older browser
+10. Tree Shaking
+11. vite, webpack, parcel

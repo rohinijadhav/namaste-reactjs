@@ -1,0 +1,31 @@
+{
+  "name": "namaste-reactjs",
+  "version": "1.0.0",
+  "description": "This is React JS project",
+  "scripts": {
+    "test": "jest",
+    "start": "npx parcel index.html",
+    "build": "npx parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohinijadhav/namaste-reactjs.git"
+  },
+  "author": "Rohini Jadhav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohinijadhav/namaste-reactjs/issues"
+  },
+  "homepage": "https://github.com/rohinijadhav/namaste-reactjs#readme",
+  "devDependencies": {
+    "parcel": "^2.16.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
