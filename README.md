@@ -21,5 +21,16 @@ Parcel (parceljs.org)
 - Tree Shaking
 
 browserlist (browserlist.dev)
+- Support mentioned browser versions
 
+Babel
 - transpilation and polyfilling
+- Convert JSX code into React code.
+
+
+JSX
+- HTML Like Syntax. But its not HTML
+- Handle  Cross Site Scripting 
+ex:
+const data = api.getData()    // THis can have malicious code coming from api.
+<h1>{data}</h1>              // this JSX element will sanitize this data before excuting.
