@@ -152,3 +152,8 @@ Fiber node
  ├─ Lanes/Priority  → when to render
  ├─ Hooks           → For functional components, stores state, reducer info, refs
  └─ Alternate       → Reference to the old/current Fiber node for diffing
+
+
+# CORS PROXY
+
+corsproxy.io
