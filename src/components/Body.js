@@ -1,5 +1,5 @@
 import RestaurantCard from "./RestaurantCard";
-import { REST_LIST } from "../utils/mockData";
+import { REST_LIST } from "../data/restaurantList";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 

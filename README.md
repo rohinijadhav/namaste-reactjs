@@ -20,6 +20,24 @@ Namaste React JS
 - Secure SSL hosting - Https
 - Tree Shaking
 
+# HMR  
+
+Definition:
+
+HMR is a feature in modern bundlers that updates modules in a running application without doing a full page reload.
+
+-What it does
+
+When you change a file (JS, JSX, CSS, etc.):
+
+Only that module is replaced in the running app
+
+The app keeps its state (e.g., React component state)
+
+You see the changes instantly
+
+No refresh → faster development → less disruption
+
 # browserlist (browserlist.dev)
 - Support mentioned browser versions
 
@@ -157,3 +175,11 @@ Fiber node
 # CORS PROXY
 
 corsproxy.io
+
+
+# Routing 
+
+https://reactrouter.com/
+
+- Client side Routing
+- Server side Routing

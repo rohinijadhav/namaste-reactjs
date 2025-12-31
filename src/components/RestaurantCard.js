@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { CDN_URL } from "../utils/constants";
 
 const RestaurantCard = (props) => {
@@ -6,21 +7,22 @@ const RestaurantCard = (props) => {
   // or we can destructure it directly in the parameter like RestaurantCard({ restData }) and use it directly.   ;
 
   const { restData } = props; //Destructuring props
-  const { name, cuisines, avgRating, costForTwo, cloudinaryImageId, sla } =
-    restData?.info; // More Destructuring
+  // More Destructuring
+  const { id, name, cuisines, avgRating, costForTwo, cloudinaryImageId, sla } = restData?.info; 
 
-  return (
-    <div className="rest-card">
-      <img
-        src={CDN_URL + cloudinaryImageId}
-        alt="rest-img"
-        className="rest-img"
-      />
-      <h4>{name}</h4>
-      <h5>{cuisines?.join(", ")}</h5>
-      <h5>{avgRating} Rating</h5>
-      <h5>{costForTwo}</h5>
-      <h5>{sla?.slaString}</h5>
+    return (<div className="rest-card">
+      <Link to={"/restaurant/" + id}>
+        <img
+          src={CDN_URL + cloudinaryImageId}
+          alt="rest-img"
+          className="rest-img"
+        />
+        <h4>{name}</h4>
+        <h5>{cuisines?.join(", ")}</h5>
+        <h5>{avgRating} Rating</h5>
+        <h5>{costForTwo}</h5>
+        <h5>{sla?.slaString}</h5>
+      </Link>
     </div>
   );
 };
