@@ -183,3 +183,39 @@ https://reactrouter.com/
 
 - Client side Routing
 - Server side Routing
+
+# Mouning
+
+Render prepares the UI description, and mounting happens during the commit phase when React inserts the component into the real DOM.
+
+Render !== showing UI  - It is decide what to show on UI.
+
+Commit / Mount === SHowing UI - It is actually shows compoent on UI but ceating or modifying real DOM which browser paint on the screen.
+
+Final crystal-clear breakdown
+🔹 Mount (React – Commit Phase)
+
+Creates DOM nodes (for first render)
+
+Modifies DOM nodes (for updates)
+
+Attaches event listeners
+
+Marks component as mounted
+
+👉 React’s responsibility ends here
+
+🔹 Paint (Browser)
+
+Reads the updated DOM
+
+Calculates layout
+
+Paints pixels
+
+Displays UI
+
+👉 Browser’s responsibility
+
+# Unmounting
+Remove component from actual Dom.
