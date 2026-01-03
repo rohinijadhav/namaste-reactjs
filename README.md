@@ -219,3 +219,12 @@ Displays UI
 
 # Unmounting
 Remove component from actual Dom.
+
+# Custom Hook  
+
+- Custom hook is a javascript function that uses react hooks inside and follow hook rule so react can track its state and lifecycle.
+
+- custom hook name always start with "use"
+
+
+# Code Splitting / Lazy Loading

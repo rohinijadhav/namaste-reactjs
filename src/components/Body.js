@@ -2,6 +2,7 @@ import RestaurantCard from "./RestaurantCard";
 import { REST_LIST } from "../data/restaurantList";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
   // Its a way to create state variable in react using usestate hook.
@@ -12,6 +13,7 @@ const Body = () => {
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);  // To maintain the filtered list of restaurants based on search or filter
   const [searchText, setSearchText] = useState("");
 
+  const onlineStatus = useOnlineStatus();
   console.log("Rendering Body Component");
 
   // useEffect hook - its a lifecycle method which runs after every render of the component.
@@ -24,6 +26,10 @@ const Body = () => {
       console.log("useEffect called - API data loaded");
     }, 500);
   }, []);
+
+  if(!onlineStatus){
+    return (<h1>🔴 You are offline! Please check your internet connection.</h1>);
+  }
 
   return listOfRestaurant?.length === 0 ? (
     <Shimmer />
