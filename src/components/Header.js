@@ -10,12 +10,12 @@ const Header = () => {
 
   //For header section
   return (
-    <div className="header-container">
-      <div className="logo-container">
+    <div className="flex justify-between bg-lime-50 shadow-lg">
+      <div className="w-30">
         <img src={LOGO_URL} alt="logo" className="logo" />
       </div>
       <div className="nav-items">
-        <ul>
+        <ul className="inline-flex gap-4 p-5 m-5  text-xl font-color text-gray-700">
           <li>
             Online {onlineStatus ? "🟢" : "🔴"}
           </li>
@@ -34,7 +34,7 @@ const Header = () => {
           <li>cart</li>
           <li>
             <button
-              className="login-btn"
+              className="login-btn cursor-pointer"
               onClick={() => {
                 console.log("Login button clicked");
                 setLoginButtonText(

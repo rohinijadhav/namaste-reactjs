@@ -228,3 +228,37 @@ Remove component from actual Dom.
 
 
 # Code Splitting / Lazy Loading
+
+- Dividing js files into chunk to avoid initial load time of an entire application.
+- In code splitting or Lazy Loading bundler creates mutliple js file to divide code based on how   
+  code is written using such mechanism. 
+- It is load divided js file on demand mean load only when it is been called unlike initial loading.
+
+
+# SASS ad SCSS
+
+- Style component css is being used in mutliple company for react.
+- Material UI - MUI is the a CSS library.
+- Bootstrap
+- Chakra UI
+
+# Tailwind CSS 
+(tailwindcss.com)
+- Utiliy first class framework
+- Tailwindcss uses postcss behind
+
+# PostCSS   // TODO: Read more
+- Its a CSS transformation tool. 
+- It tells bunder that we are using tailwindcss.
+
+
+# Higher Order Component
+- Component which takes component, enhance it and return it back
+
+# Controlled Uncontrolled Component
+
+# Lifting State Up
+
+# Props Drilling
+
+# COntext

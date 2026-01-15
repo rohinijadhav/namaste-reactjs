@@ -8,20 +8,24 @@ const RestaurantCard = (props) => {
 
   const { restData } = props; //Destructuring props
   // More Destructuring
-  const { id, name, cuisines, avgRating, costForTwo, cloudinaryImageId, sla } = restData?.info; 
+  const { id, name, cuisines, avgRating, costForTwo, cloudinaryImageId, sla } =
+    restData?.info;
 
-    return (<div className="rest-card">
+  return (
+    <div className="rest-card w-60 border border-gray-300 rounded-lg bg-gray-100 hover:bg-gray-200 shadow-lime-600">
       <Link to={"/restaurant/" + id}>
         <img
           src={CDN_URL + cloudinaryImageId}
           alt="rest-img"
-          className="rest-img"
+          className="rest-img w-60 h-50 rounded-lg"
         />
-        <h4>{name}</h4>
-        <h5>{cuisines?.join(", ")}</h5>
-        <h5>{avgRating} Rating</h5>
-        <h5>{costForTwo}</h5>
-        <h5>{sla?.slaString}</h5>
+        <div className="rest-details p-2">
+          <h4 className="font-semibold">{name}</h4>
+          <h5>{cuisines?.join(", ")}</h5>
+          <h5>{avgRating} Rating</h5>
+          <h5>{costForTwo}</h5>
+          <h5>{sla?.slaString}</h5>
+        </div>
       </Link>
     </div>
   );
